@@ -1,5 +1,4 @@
-# ALZEMORA
-
+# 🧠 Smart Memory Aid Hat for Alzheimer's Patients
 
 A wearable smart hat that assists Alzheimer's patients in recognizing **family members**, **medications**, and remembering **when to take them** using facial recognition, object detection, and voice recognition.
 
@@ -26,11 +25,11 @@ A wearable smart hat that assists Alzheimer's patients in recognizing **family m
 
 ## 🛠️ Technologies Used
 
-- `face_recognition`
-- `ultralytics/yolov8`
-- `speech_recognition`
+- [`face_recognition`](https://github.com/ageitgey/face_recognition)
+- [`ultralytics/yolov8`](https://github.com/ultralytics/ultralytics)
+- [`speech_recognition`](https://pypi.org/project/SpeechRecognition/)
 - `ESP32-CAM`
-- `OpenCV`, `NumPy`, `Pyttsx3`
+- `OpenCV`, `NumPy`, `pyttsx3` for speech synthesis
 - Python 3.x
 - Arduino IDE (for ESP32 firmware)
 
@@ -38,27 +37,40 @@ A wearable smart hat that assists Alzheimer's patients in recognizing **family m
 
 ## 🎯 Use Case
 
-When a person appears:
-- ESP32-CAM captures the image.
-- YOLOv8 locates the face.
-- Face is matched using the face recognition model.
-- The hat plays audio: _"This is your daughter, Sarah."_
+### 🧍 Face Detection & Recognition
+1. ESP32-CAM captures the image.
+2. YOLOv8 detects the face.
+3. `face_recognition` matches the face.
+4. Hat plays audio:  
+   _"This is your daughter, Sarah."_
 
-When a medication bottle is detected:
-- YOLOv8 detects the medication.
-- Time is checked.
-- The hat plays audio: _"It's time to take your blood pressure medicine."_
+### 💊 Medication Detection
+1. YOLOv8 detects the medication bottle.
+2. System checks current time.
+3. Audio reminder plays:  
+   _"It's time to take your blood pressure medicine."_
 
-When someone speaks:
-- The microphone records the voice.
-- The system identifies the person.
-- Audio feedback: _"You are talking to John."_
+### 🎙️ Voice Recognition
+1. Microphone records incoming voice.
+2. Voice is matched with stored profiles.
+3. Audio feedback:  
+   _"You are talking to John."_
 
 ---
+###Future Enhancements
+⏰ Medication scheduler with cloud synchronization
+
+🧭 GPS tracker for user safety
+
+📱 Companion mobile app
+
+🧠 Improved NLP-powered voice interaction
 
 ## 🔌 Setup Instructions
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/alzheimers-smart-hat.git
-   cd alzheimers-smart-hat
+### 1. Clone the Repository
+```bash
+git clone https://github.com/mostafaosman68/ALZEMORA
+cd ALZEMORA
+
+
