@@ -1,4 +1,4 @@
-# 🧠 Smart Memory Aid Hat for Alzheimer's Patients
+# 🧠 ALZEMORA
 
 A wearable smart hat that assists Alzheimer's patients in recognizing **family members**, **medications**, and remembering **when to take them** using facial recognition, object detection, and voice recognition.
 
@@ -57,14 +57,14 @@ A wearable smart hat that assists Alzheimer's patients in recognizing **family m
    _"You are talking to John."_
 
 ---
-###Future Enhancements
-⏰ Medication scheduler with cloud synchronization
+## Future Enhancements
+### ⏰ Medication scheduler with cloud synchronization
 
-🧭 GPS tracker for user safety
+### 🧭 GPS tracker for user safety
 
-📱 Companion mobile app
+### 📱 Companion mobile app
 
-🧠 Improved NLP-powered voice interaction
+### 🧠 Improved NLP-powered voice interaction
 
 ## 🔌 Setup Instructions
 
